@@ -14,7 +14,7 @@ user = userval
     <div className={"joinPage"}>
         <div className={"joinContainer"}>
         <img src={logo} alt="logo"  />
-          <h1> WhatsApp </h1>
+          <h1> Nitro Chat </h1>
 
           <input placeholder='Enter Your Name' value={userval} onChange={e=>setUserval(e.target.value)} type="text" id={"joinInput"} />
         <Link onClick={e=> !userval ? e.preventDefault() : null } to={"/chatapp"}>  <button className={"loginBtn"} onClick={sendUser} >Login</button> </Link>

@@ -1,6 +1,6 @@
 {
-  "short_name": "Chat App",
-  "name": "Chat App",
+  "short_name": "Nitro Chat",
+  "name": "Nitro Chat",
   "icons": [
     {
       "src": "favicon.png",
@@ -22,5 +22,5 @@
   "display": "standalone",
   "theme_color": "#015e5e",
   "background_color": "#015e5e",
-  "color":"#015e5e"
+  "color": "#015e5e"
 }
