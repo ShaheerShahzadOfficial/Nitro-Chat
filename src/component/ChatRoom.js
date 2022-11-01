@@ -9,7 +9,7 @@ import Newlogo from "../Images/thunder.png"
 
 let user = "Shaheer"
 let socket;
-const ENDPOINT = "http://localhost:4500/"
+const ENDPOINT = "https://thunder-chat-app-backend.herokuapp.com/"
 
 const ChatRoom = () => {
 const [message, setMessage] = useState("")
