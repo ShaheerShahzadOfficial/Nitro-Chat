@@ -13,8 +13,8 @@ const Join = () => {
         <img src={Newlogo} alt="logo"  />
           <h1> Thunder Chat </h1>
 
-          <Link to={"/ChatApp"} >  <button className={"loginBtn"} >Login</button> </Link>
-        <Link to={"/ChatApp"}>  <button className={"loginBtn"} >Register</button> </Link>
+          <Link to={"/login"} >  <button className={"loginBtn"} >Login</button> </Link>
+        <Link to={"/register"}>  <button className={"loginBtn"} >Register</button> </Link>
         </div>
     </div>
   )
