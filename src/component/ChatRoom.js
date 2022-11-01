@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import "./chat.css"
-import {user} from "./Join"
+// import {user} from "./Join"
 import socketIo from "socket.io-client"
 import { useNavigate } from 'react-router-dom'
 import ReactScrollToBottom from "react-scroll-to-bottom";
 import Message from './Message'
+import Newlogo from "../Images/thunder.png"
 
-
+let user = "Shaheer"
 let socket;
-const ENDPOINT = "https://groupchattingapp.herokuapp.com/"
+const ENDPOINT = "http://localhost:4500/"
 
 const ChatRoom = () => {
 const [message, setMessage] = useState("")
@@ -23,6 +24,10 @@ const sendmsg =()=>{
 
 
   const route = useNavigate()
+
+  socket = socketIo(ENDPOINT,{transports:["websocket"]})
+
+
   useEffect(() => {
     window.addEventListener("beforeunload", async function (e) {
       socket?.on("disconnect");
@@ -35,7 +40,6 @@ if (!user) {
 return  route("/") 
 }
 
-socket = socketIo(ENDPOINT,{transports:["websocket"]})
 
     socket?.on("connect",()=>{
       setid(socket.id);
@@ -73,7 +77,9 @@ return ()=>{
   return (
     <div className={"ChatRoom"}>
       <div className={"chatContainer"}>
-        <div className={"header"}></div>
+        <div className={"header"}> <img src={Newlogo} alt="logo" />
+        <h2>Thunder Chat</h2>
+         </div>
         <ReactScrollToBottom className={"chatBox"}>
                     {messages.map((item, i) => <Message  key={i} user={item.id === id ? '' : item.user} message={item.message} classs={item.id === id ? 'right' : 'left'} />)}
                 </ReactScrollToBottom>
@@ -87,3 +93,13 @@ return ()=>{
 }
 
 export default ChatRoom
+
+// import React from 'react'
+
+// const ChatRoom = () => {
+//   return (
+//     <div>ChatRoom</div>
+//   )
+// }
+
+// export default ChatRoom

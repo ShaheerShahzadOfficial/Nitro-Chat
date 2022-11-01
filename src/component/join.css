@@ -1,5 +1,5 @@
 .joinPage{
-    background-color:rgb(1, 94, 94);
+    background-color:#0D9B5F;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -8,46 +8,25 @@
     box-sizing: border-box;
 }
 .joinContainer{
- /* border: 2px solid white; */
- /* height: 50%; */
- width: 50%;
+ width: 80%;
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 
 .joinContainer > img{
-    width: 10vmax;
+    width: 15vmax;
 }
 .joinContainer > h1{
-    color: white;
-    font-size: 2.5vmax;
-    font-family: "Roboto";
+    color: #FFBB12;
+    font-size: 3vmax;
+    font-family: 'Bukhari Script';
     border-bottom: 3px solid white;
+    font-weight: lighter;
     text-align: center;
-    width: 35vmax;
+    width: 30vmax;
     padding: 1vmax;
     box-sizing: border-box;
-
-}
-#joinInput{
-    width: 25vmax;
-    padding: 1.5vmax;
-    border: none;
-    font-size: 1.3vmax;
-    font-weight: 600;
-    margin: 2vmax;
-    box-sizing: border-box;
-    color: rgb(1, 61, 61);
-    border:3px solid rgb(1, 61, 61);
-}
-#joinInput::placeholder{
-    color: rgb(23, 187, 187);
-}
-
-#joinInput:focus,
-#joinInput:active{
-    outline: rgb(1, 61, 61);
 }
 
 .loginBtn{
@@ -55,12 +34,16 @@
     padding: 1.5vmax;
     border: 2px solid white;
     font-size: 1.5vmax;
-    background-color: rgb(9, 93, 93);
+    /* background-color: #a80000; */
+    background-color:#134d35a3;
     color: white;
     font-family: "Roboto";
 cursor: pointer;
 transition: all 0.3s;
+margin:1vmax;
 }
+
 .loginBtn:hover{
-    background-color: rgb(1, 61, 61);
+    /* background-color:#ca0000; */
+background-color: #023520ba;
 }

@@ -3,7 +3,7 @@
   "name": "Nitro Chat",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -20,7 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#015e5e",
-  "background_color": "#015e5e",
-  "color": "#015e5e"
+  "theme_color": "#BA2D2D",
+  "background_color": "#BA2D2D",
+  "color": "#BA2D2D"
 }

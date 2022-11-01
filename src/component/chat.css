@@ -1,5 +1,5 @@
 .ChatRoom {
-  background-color: #007272;
+  background-color: #00653b;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -15,11 +15,30 @@
 }
 .header {
   /* background-color: rgb(6, 158, 158); */
-  background-color: #049e9e;
-  border-bottom: 0.2vmax solid  rgb(2, 75, 75);
+  background-color: #0D9B5F;
+  border-bottom: 0.2vmax solid  #00653b;
   height: 15%;
   box-sizing: border-box;
+  display: flex;
 }
+.header > h2 {
+  margin: 1vmax;
+  font-size: 3vmax;
+  color: #FFBB12;
+}
+.header img{
+  width: 11vh !important;
+  height: 11vh !important;
+  /* border-radius: 100%; */
+  margin-top: 0vmax !important;
+  margin: 2vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.header>img:hover{
+  transform: scale(1.2);
+}
+
 .chatBox {
   box-sizing: border-box;
   height: 70%;
@@ -42,15 +61,15 @@
   outline: none;
 }
 .sendbtn{
-    background-color: rgb(2, 75, 75);
+    background-color: #0D9B5F;
     color: rgb(255, 255, 255);
     border: none;
     width: 20%;
-    
+    height: 100%;
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.3s;
 }
 .sendbtn:hover{
-    background-color: rgb(1, 54, 54);
+    background-color: #01a762;
 }

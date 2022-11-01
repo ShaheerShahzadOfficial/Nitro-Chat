@@ -1,28 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 import  "./join.css"
-import logo from "../Images/logo1.png"
+// import logo from "../Images/logo.png"
 import {Link} from "react-router-dom"
 
-let user ;
+import Newlogo from "../Images/thunder.png"
 
 const Join = () => {
-  const [userval, setUserval] = useState("")
-  const sendUser = () =>{
-user = userval
-  }
+
   return (
     <div className={"joinPage"}>
         <div className={"joinContainer"}>
-        <img src={logo} alt="logo"  />
-          <h1> Nitro Chat </h1>
+        <img src={Newlogo} alt="logo"  />
+          <h1> Thunder Chat </h1>
 
-          <input placeholder='Enter Your Name' value={userval} onChange={e=>setUserval(e.target.value)} type="text" id={"joinInput"} />
-        <Link onClick={e=> !userval ? e.preventDefault() : null } to={"/chatapp"}>  <button className={"loginBtn"} onClick={sendUser} >Login</button> </Link>
+          <Link to={"/ChatApp"} >  <button className={"loginBtn"} >Login</button> </Link>
+        <Link to={"/ChatApp"}>  <button className={"loginBtn"} >Register</button> </Link>
         </div>
     </div>
   )
 }
 
 export default Join
-
-export {user}
