@@ -1,6 +1,7 @@
 import "./register.css"
 import React, { useState } from 'react'
 import logo from  "../../Images/favicon.png"
+import { toast } from 'react-toastify';
 
 const Register = () => {
 
@@ -8,6 +9,24 @@ const Register = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
+    const register = ()=>{
+      if (name!=="" && email !=="" && password !=="") {
+        
+      }else{
+        toast.error('Name,Email & password are required !', {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          })
+      }
+    }
+    
 
   return (
     <div className='login'>
@@ -35,7 +54,7 @@ const Register = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
     
-            <button>Register</button>
+            <button onClick={register}>Register</button>
     </div>
     
         </div>  )

@@ -1,5 +1,6 @@
 .login{
-    background-color: white;
+    /* background-color: #68c56e; */
+background-color: #006f41;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,13 +10,11 @@
     min-height: 100vh;
 }
 .loginForm{
-    background-color:#0D9B5F;
-
-    /* height: 100%; */
+    background-color:#0d9b5f;
     width: 60%;
     border-radius: 30px;
     box-sizing: border-box;
-    padding: 2vmax;
+    padding: 1vmax;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,8 +22,8 @@
 .loginForm > input{
     box-sizing: border-box;
     padding: 1vmax 2vmax;
-    width: 80%;
-    border-radius: 40px;
+    width: 70%;
+    border-radius: 0px;
     border: 1px solid #ccc;
     margin: 2vmax;
     font: 100 1.2rem "Roboto", sans-serif;
@@ -32,24 +31,56 @@
 }
 .loginForm > button{
     box-sizing: border-box;
-    padding: 1vmax 2vmax;
-    width: 40%;
-    border-radius: 40px;
-    border: 1px solid #ccc;
+    padding: 1vmax;
+    width: 30%;
+    border: 3px solid #251C14;
     margin: 2vmax;
     font: 100 1.2rem "Roboto", sans-serif;
     outline: none;
-    background-color: #00512f;
-    color: white;
+    background-color: #D6BAA1 ;
+    color: #251C14;
+cursor: pointer;
 }
+
+
+
+
+
+@keyframes gradient{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.btnLogin:after{
+    content: "RAINBOW";
+    position: absolute;
+    background-color: #1c1b29;
+    height: 93%;
+    width: 93%;
+    top: 3.5%;
+    left: 3.5%;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 6px;
+    display: grid;
+    place-items: center;
+
+}
+
+
+
+
 .formHeader{
 display: flex;
 }
 
 .formHeader > img{
-    width: 15vmax;
+    width: 16vmax;
     height: auto;
-    margin: 2vmax;
+    margin: 1vmax;
 }
 
 
@@ -62,7 +93,7 @@ display: flex;
        height: auto;
      }
      .formHeader > img{
-        width: 25vmax;
+        width: 26vmax;
         height: auto;
         margin: 1vmax;
     }
@@ -72,10 +103,10 @@ display: flex;
        margin: 2vmax;
        font: 100 1.2rem "Roboto", sans-serif;
        margin: 4vw;
-       width: 90%;
+       width: 96%;
      }
      .loginForm > button {
-        padding: 4vw 8vw;
+        padding: 3vw 6vw;
         margin: 2vmax;
         font: 100 1.2rem "Roboto", sans-serif;
         margin: 4vw;

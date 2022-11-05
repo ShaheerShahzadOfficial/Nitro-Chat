@@ -1,6 +1,6 @@
 {
-  "short_name": "Thunder Chat",
-  "name": "Thunder Chat",
+  "short_name": "Thunder Chat ⚡",
+  "name": "Thunder Chat ⚡",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,7 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#00653b",
-  "background_color": "#00653b",
-  "color": "#00653b"
+  "theme_color": "#0d9b5f",
+  "background_color": "#0d9b5f",
+  "color": "#001b17"
 }

@@ -6,11 +6,15 @@ import ChatRoom from "./component/ChatRoom.js"
 import Login from './component/login/login';
 import Register from './component/Register/Register';
 
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {  
+
   return (
-    // <div className="App">
     <BrowserRouter>
+    <ToastContainer />
     <Routes>
       <Route exact path='/' element={<Join/>}/>
       <Route  path='/ChatApp' element={<ChatRoom/>}/>
@@ -20,7 +24,7 @@ function App() {
 
     </Routes>
     </BrowserRouter>
-    // </div>
+    
   );
 }
 

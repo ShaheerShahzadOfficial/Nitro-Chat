@@ -1,10 +1,32 @@
 import "./login.css"
 import React, { useState } from 'react'
 import logo from  "../../Images/favicon.png"
+import { toast } from 'react-toastify';
+
 const Login = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
+    
+const login = ()=>{
+  if (email !=="" && password !=="") {
+    
+  }else{
+    toast.error('Email & password are required !', {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      })
+  }
+}
+
+
 
   return (
     <div className='login'>
@@ -26,7 +48,7 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button>Login</button>
+        <button onClick={login}>Login</button>
 </div>
 
     </div>

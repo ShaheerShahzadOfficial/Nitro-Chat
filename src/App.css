@@ -1,7 +1,20 @@
 body {
   margin-top: auto !important;
   margin: 0;
-  background-color:#00653b;
+  background-color:#0d9b5f;
+}
+body::-webkit-scrollbar {
+  width: 0vmax
+}
+
+
+footer{
+  margin: auto;
+  /* width: auto; */
+  color: white;
+  /* background-color: #00362e; */
+  text-align: center;
+  font: 600 2vmax "Roboto";
 }
 
 @media (max-width: 770px) {
@@ -9,35 +22,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start !important;
-    background-color:#00653b;
+    background-color:#0d9b5f !important;
     overflow-y: auto;
     overflow-x: hidden;
     resize: none  ;
   }
   .joinContainer {
-    margin-top: 20vw !important;
+    margin-top: 14vw !important;
     width: 100% !important;
 }
 
   .joinContainer > img {
+    margin-top: 0vmax !important;
+
     width:  36vmax !important;
   }
   .joinContainer > h1 {
-    font-size: 5vmax !important;
-    width: 80% !important;
-    border-bottom: 0.6vw solid white !important;
-    padding: 3vw !important;
+    font-size: 10vmax !important;
+    width: auto !important;
+    border-bottom: 1vw solid #001b17 !important;
+    padding: 2vw !important;
   }
   .loginBtn {
     width: 65vw !important;
     padding: 4vw !important;
-    margin:2vmax;
+    margin-top:6vmax !important; 
     font-size: 5vw !important;
   }
 
   .chatContainer {
     background-color: white;
-    height: 100% !important;
+    height: 100vh!important;
     width: 100% !important;
   }
   .header {
@@ -65,12 +80,13 @@ body {
   }
 
   .InputBox {
-    height: 11% !important;
+    height: 14% !important;
     /* padding: 1vmax; */
   }
   #chatInput {
     padding: 4vw !important;
     font-size: 3vmax !important;
+    width: 70% !important;
   }
   .messageBox {
     padding: 3vw !important;
@@ -86,8 +102,11 @@ body {
 }
 
 .sendbtn{
-  width: 20%;
-  height: 126% !important;
+  width: 30% !important;
 }
 
+footer{
+  margin-top: 1vmax;
+  font: 600 3vmax "Roboto";
+}
 }

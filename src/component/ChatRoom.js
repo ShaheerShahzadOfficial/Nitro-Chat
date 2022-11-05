@@ -7,14 +7,16 @@ import ReactScrollToBottom from "react-scroll-to-bottom";
 import Message from './Message'
 import Newlogo from "../Images/thunder.png"
 
-let user = "Shaheer"
 let socket;
+let user = "Name"
 const ENDPOINT = "https://thunder-chat-app-backend.herokuapp.com/"
 
 const ChatRoom = () => {
 const [message, setMessage] = useState("")
 const [id, setid] = useState("")
 const [messages, setMessages] = useState([])
+
+
 
 
 const sendmsg =()=>{
@@ -34,11 +36,6 @@ const sendmsg =()=>{
       socket?.off()     
       route("/")
       })
-
-
-if (!user) {
-return  route("/") 
-}
 
 
     socket?.on("connect",()=>{
@@ -88,18 +85,9 @@ return ()=>{
           <button className={"sendbtn"} disabled={message === "" ? true : false} onClick={sendmsg}>Send</button>
         </div>
       </div>
+     
     </div>
   )
 }
 
 export default ChatRoom
-
-// import React from 'react'
-
-// const ChatRoom = () => {
-//   return (
-//     <div>ChatRoom</div>
-//   )
-// }
-
-// export default ChatRoom

@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+
 .joinPage{
-    background-color:#0D9B5F;
+    background-color:#0d9b5f;
     width: 100vw;
+    /* background-color:#5affba; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,35 +19,37 @@
 }
 
 .joinContainer > img{
-    width: 15vmax;
+    width: 16vmax;
 }
 .joinContainer > h1{
-    color: #FFBB12;
-    font-size: 3vmax;
-    font-family: 'Gill Sans';
-    border-bottom: 3px solid white;
+    color: #001b17;
+    font-size: 5.5vmax;
+    font-weight: bolder;
+    font-family: 'Rouge Script', cursive;
+    border-bottom: 3px solid #001b17;
     font-weight: bolder;
     text-align: center;
-    width: 30vmax;
-    padding: 1vmax;
+    width: auto;
     box-sizing: border-box;
+    margin: 1vmax;
 }
 
 .loginBtn{
+    margin-top: 2vmax;
     width: 25vmax;
     padding: 1.5vmax;
-    border: 2px solid white;
-    font-size: 1.5vmax;
-    /* background-color: #a80000; */
-    background-color:#134d35a3;
-    color: white;
+    font-size: 1.8vmax;
+    font-weight: bolder;
+    color: #251C14;
     font-family: "Roboto";
 cursor: pointer;
 transition: all 0.3s;
-margin:1vmax;
+background-color: #D6BAA1;
+/* box-shadow: 0px 2px 8px 4px #00035a  ; */
+border: 3px solid #251C14;
 }
 
 .loginBtn:hover{
-    /* background-color:#ca0000; */
-background-color: #023520ba;
+    background-color:#a78d76;
+    /* color: white; */
 }

@@ -1,36 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+
 .ChatRoom {
-  background-color: #00653b;
+  background-color: #007967;
   width: 100vw;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  display: flex;
 }
 .chatContainer {
   background-color: white;
   width: 60%;
-  height:80%;
+  height:90%;
   box-sizing: border-box;
+  margin:auto;
 }
 .header {
   /* background-color: rgb(6, 158, 158); */
-  background-color: #0D9B5F;
-  border-bottom: 0.2vmax solid  #00653b;
+  background-color: #0d9b5f;
+  border-bottom: 0.2vmax solid  #0d9b5f;
   height: 15%;
   box-sizing: border-box;
   display: flex;
 }
 .header > h2 {
   margin: 1vmax;
-  font-size: 3vmax;
-  color: #FFBB12;
+  font-size: 4vmax;
+  color: #001b17;
+  font-family: 'Rouge Script', cursive;
+
 }
 .header img{
   width: 11vh !important;
   height: 11vh !important;
   /* border-radius: 100%; */
-  margin-top: 0vmax !important;
+  margin-top: 0.4vmax !important;
   margin: 2vmax;
   transition: all 0.3s;
   cursor: pointer;
@@ -42,34 +48,39 @@
 .chatBox {
   box-sizing: border-box;
   height: 70%;
-  border-bottom: 0.2vmax solid  rgb(2, 75, 75);
+  border-bottom: 0.2vmax solid #0d9b5f;
 
 }
 .InputBox {
   height: 15%;
   box-sizing: border-box;
   display: flex;
+  border-bottom: 0.2vmax solid #0d9b5f;
 }
 #chatInput {
   width: 80%;
   border: none;
   background-color: white;
-  font: 400 1.6vmax "Roboto";
+  font: 800 1.6vmax "Roboto";
   padding: 2vmax;
   box-sizing: border-box;
   color: #015e5e;
   outline: none;
 }
 .sendbtn{
-    background-color: #0D9B5F;
-    color: rgb(255, 255, 255);
     border: none;
     width: 20%;
     height: 100%;
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.3s;
+    font-size: xx-large;
+    font-weight: 800;
+    font-family: 'Rouge Script', cursive;
+    background-color: #00362e;
+    color: #0d9b5f;
 }
 .sendbtn:hover{
-    background-color: #01a762;
+  background-color: #0d9b5f;
+  color: #00362e;
 }
